@@ -25,6 +25,7 @@ function JobItem({ job, candidate, baseUrl }) {
                 body: JSON.stringify({
                     uuid: candidate.uuid,
                     jobId: job.id,
+                    applicationId: candidate.applicationId,
                     candidateId: candidate.candidateId,
                     repoUrl: repoUrl
                 })
